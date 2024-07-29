@@ -28,9 +28,9 @@
         <a id="addressLink" href='#' class="block bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded text-center">
            My Address
         </a>
-<!--         <a id="categoryLink" href='#'  class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded text-center">
+        <a id="categoryLink" href='#'  class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded text-center">
             Category
-        </a> -->
+        </a>
     </div>
    
 <!--         <a  id="dynamicLink" href='#' class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -67,12 +67,12 @@
         const iosPlatforms = ['iPhone', 'iPad', 'iPod'];
         let os = null;
         const link = document.getElementById("dynamicLink");
-                const link2 = document.getElementById("walletLink");
-                const link3 = document.getElementById("profileLink");
-                const link4 = document.getElementById("subLink");
-                const link5 = document.getElementById("orderLink");
-                        const link6 = document.getElementById("addressLink");
-                                const link7 = document.getElementById("categoryLink");
+        const link2 = document.getElementById("walletLink");
+        const link3 = document.getElementById("profileLink");
+        const link4 = document.getElementById("subLink");
+        const link5 = document.getElementById("orderLink");
+        const link6 = document.getElementById("addressLink");
+        const link7 = document.getElementById("categoryLink");
     
         if (macosPlatforms.indexOf(platform) !== -1) {
              os = 'Mac OS';
@@ -87,19 +87,19 @@
             link3.href ="https://mastbazaar.com/campaign/4660f1";
             link4.href ="https://mastbazaar.com/campaign/50a75a";
             link5.href ="https://mastbazaar.com/campaign/8379b3";
-                        link6.href ="https://mastbazaar.com/campaign/79a7b0";
-                                    link7.href ="https://mastbazaar.com/campaign/b6de5c/Categorydairy-bakes-eggs";
+            link6.href ="https://mastbazaar.com/campaign/79a7b0";
+            link7.href ="https://mastbazaar.com/campaign/b6de5c/dairy-bakes-eggs";
         } else if (windowsPlatforms.indexOf(platform) !== -1) {
             os = 'Windows';
         } else if (/Android/.test(userAgent)) {
             os = 'Android';
             link.href = "intent://campaign?campaign/May_Day_Sale/d2409f2f-18ee-4201-a677-1350b795f19a#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
-                        link2.href = "intent://campaign?campaign/97b562#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            link2.href = "intent://campaign?campaign/97b562#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
             link3.href = "intent://campaign?campaign/4660f1#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
             link4.href = "intent://campaign?campaign/50a75a#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
             link5.href = "intent://campaign?campaign/8379b3#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
-                        link6.href = "intent://campaign?campaign/79a7b0#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
-                                    link7.href = "intent://campaign?campaign/b6de5c/Categorydairy-bakes-eggs#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            link6.href = "intent://campaign?campaign/79a7b0#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            link7.href = "intent://campaign?campaign/b6de5c/dairy-bakes-eggs#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
         } else if (!os && /Linux/.test(platform)) {
             os = 'Linux';
         }
