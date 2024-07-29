@@ -28,6 +28,10 @@
      <a  id="orderLink" href='#' class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           My orders
     </a>
+    <br>
+      <a  id="addressLink" href='#' class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          My Address
+    </a>
     <script>
         
         const userAgent = window.navigator.userAgent;
@@ -41,6 +45,7 @@
                 const link3 = document.getElementById("profileLink");
                 const link4 = document.getElementById("subLink");
                 const link5 = document.getElementById("orderLink");
+                        const link6 = document.getElementById("addressLink");
     
         if (macosPlatforms.indexOf(platform) !== -1) {
              os = 'Mac OS';
@@ -55,6 +60,7 @@
             link3.href ="https://mastbazaar.com/campaign/4660f1";
             link4.href ="https://mastbazaar.com/campaign/50a75a";
             link5.href ="https://mastbazaar.com/campaign/8379b3";
+                        link6.href ="https://mastbazaar.com/campaign/79a7b0";
         } else if (windowsPlatforms.indexOf(platform) !== -1) {
             os = 'Windows';
         } else if (/Android/.test(userAgent)) {
@@ -64,6 +70,7 @@
             link3.href = "intent://campaign?campaign/4660f1#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
             link4.href = "intent://campaign?campaign/50a75a#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
             link5.href = "intent://campaign?campaign/8379b3#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+                        link6.href = "intent://campaign?campaign/79a7b0#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
         } else if (!os && /Linux/.test(platform)) {
             os = 'Linux';
         }
