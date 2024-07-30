@@ -11,7 +11,7 @@
 <body class="flex items-center justify-center h-screen">
     <div class="space-y-4">
         <a id="dynamicLink" href='#' class="block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center">
-            Click Me 2
+            Campaign
         </a>
         <a id="walletLink" href='#' class="block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center">
           Wallet
@@ -31,6 +31,27 @@
         <a id="categoryLink" href='#'  class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded text-center">
             Category
         </a>
+<!--          <a id="dynamicLinkProd" href='#' class="block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center">
+            Campaign prod
+        </a>
+        <a id="walletLinkProd" href='#' class="block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-center">
+          Wallet prod
+        </a>
+        <a id="profileLinkProd" href='#' class="block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-center">
+            My profile prod
+        </a>
+        <a id="subLinkProd" href='#'class="block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded text-center">
+       My subscription prod
+        </a>
+        <a id="orderLinkProd" href='#' class="block bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded text-center">
+           My orders prod
+        </a>
+        <a id="addressLinkProd" href='#' class="block bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded text-center">
+           My Address prod
+        </a>
+        <a id="categoryLinkProd" href='#'  class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded text-center">
+            Category prod
+        </a> -->
     </div>
    
 <!--         <a  id="dynamicLink" href='#' class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -73,6 +94,14 @@
         const link5 = document.getElementById("orderLink");
         const link6 = document.getElementById("addressLink");
         const link7 = document.getElementById("categoryLink");
+        
+        const link8 = document.getElementById("dynamicLinkProd");
+        const link9 = document.getElementById("walletLinkProd");
+        const link10 = document.getElementById("profileLinkProd");
+        const link11 = document.getElementById("subLinkProd");
+        const link12 = document.getElementById("orderLinkProd");
+        const link13 = document.getElementById("addressLinkProd");
+        const link14 = document.getElementById("categoryLinkProd");
     
         if (macosPlatforms.indexOf(platform) !== -1) {
              os = 'Mac OS';
@@ -89,6 +118,14 @@
             link5.href ="https://mastbazaar.com/campaign/8379b3";
             link6.href ="https://mastbazaar.com/campaign/79a7b0";
             link7.href ="https://mastbazaar.com/campaign/b6de5c/dairy-bakes-eggs";
+             lin8.href = "https://mastbazaar.com/campaign/Morning_Freshness/bcaf2d23-9bd4-44fb-902f-ebb891f5efde";
+                                    // link.href = "https://mastbazaar.com/campaign/Morning_Freshness/bcaf2d23-9bd4-44fb-902f-ebb891f5efde";
+            link9.href ="https://mastbazaar.com/campaign/a20140";  // wallet page
+            link10.href ="https://mastbazaar.com/campaign/d5847d";
+            link11.href ="https://mastbazaar.com/campaign/5b9e72";
+            link12.href ="https://mastbazaar.com/campaign/ef9c27";
+            link13.href ="https://mastbazaar.com/campaign/9e6ee8";
+            link14.href ="https://mastbazaar.com/campaign/878e4d/dairy-bakes-eggs";
         } else if (windowsPlatforms.indexOf(platform) !== -1) {
             os = 'Windows';
         } else if (/Android/.test(userAgent)) {
@@ -100,6 +137,14 @@
             link5.href = "intent://campaign?campaign/8379b3#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
             link6.href = "intent://campaign?campaign/79a7b0#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
             link7.href = "intent://campaign?campaign/b6de5c/dairy-bakes-eggs#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            
+            link8.href = "intent://campaign?campaign/May_Day_Sale/bcaf2d23-9bd4-44fb-902f-ebb891f5efdea#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            link9.href = "intent://campaign?campaign/a20140#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            link10.href = "intent://campaign?campaign/d5847d#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            link11.href = "intent://campaign?campaign/5b9e72#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            link12.href = "intent://campaign?campaign/ef9c27#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            link13.href = "intent://campaign?campaign/9e6ee8#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
+            link14.href = "intent://campaign?campaign/878e4d/dairy-bakes-eggs#Intent;scheme=mastbazaar;package=com.mastbazaar.app;end";
         } else if (!os && /Linux/.test(platform)) {
             os = 'Linux';
         }
